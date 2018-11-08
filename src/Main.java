@@ -7,7 +7,11 @@ public class Main {
 
         Scanner keyboard;
         keyboard = new Scanner(System.in);
+        int wordToGuess;
+        int WordToGuessLength;
+        int lettersRemaining;
 
+        String[] wordsToGuessArray = new String[]{"progress","programming","cat","dog","shackle"};
 
 
 
@@ -17,7 +21,26 @@ public class Main {
                 "\n One of you will guess the word while the other will be the one who gives the word. \n\n" +
                 "Ready to play?");
         keyboard.nextLine();
-
+        System.out.println();
+        hangmanDisplay();
 
     }
+    public static void hangmanDisplay(){
+         System.out.println("-----------------");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("|");
+        System.out.println("--------------------------------");
+
+    }
+
 }
