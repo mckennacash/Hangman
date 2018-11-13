@@ -7,13 +7,10 @@ public class Main {
 
         Scanner keyboard;
         keyboard = new Scanner(System.in);
-        int wordToGuess;
-        int WordToGuessLength;
-        int lettersRemaining;
-        String secretPhrase;
+        String secretPhrase = new String();
         String[] guessPhraseBreakDown = secretPhrase.split("");
-
-
+        String guessPhrase = new String();
+        guessPhrase = guessPhrase.substring(0,i)+guess+guessPhrase.substring(i+1)
 
         System.out.println("Welcome to hangman!\n In this game, you and another player " +
                 "wil play against each other." +
@@ -42,6 +39,7 @@ public class Main {
         System.out.println("--------------------------------");
 
     }
+
  //   public static String replaceSecretWordDashes(String secretWord){
 
   //  }
